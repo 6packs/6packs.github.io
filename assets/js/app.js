@@ -19,7 +19,14 @@ const stateOf = (now, startsAtMs, endsAtMs) => {
 };
 
 const fmtDate = (d) =>
-  d.toLocaleString('en-US', { weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit', timeZoneName:'short' });
+  d.toLocaleString('en-US', {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+    timeZone: 'America/New_York', // <-- force EST/EDT
+  });
 
 const pad = (n) => String(n).padStart(2,'0');
 
@@ -33,10 +40,8 @@ function remaining(ms) {
 
 function countdownLabel(ms) {
   const { d, h, m, s } = remaining(ms);
-  const parts = [];
-  if (d) parts.push(`${d}d`);
-  parts.push(`${pad(h)}h:${pad(m)}m:${pad(s)}s`);
-  return parts.join(' ');
+  // Always show days, even if zero, and always use colon separators
+  return `${d}d:${pad(h)}h:${pad(m)}m:${pad(s)}s`;
 }
 
 function unlockRemainingLabel(untilMs) {
@@ -125,7 +130,10 @@ function buildCard(event) {
 
     if (stNow === 'locked') {
       const untilUnlock = (startsAt - UNLOCK_LEAD_MS) - now;
-      if (lockCountdown) lockCountdown.textContent = `Unlocks in ${countdownLabel(untilUnlock)}`;
+      if (lockCountdown) {
+        const label = countdownLabel(untilUnlock);
+        lockCountdown.innerHTML = `Unlocks in<br>${label}`;
+      }
       if (whereEl) whereEl.textContent = unlockRemainingLabel(untilUnlock);
       lock.style.display = 'grid';
     } else if (stNow === 'upcoming') {
