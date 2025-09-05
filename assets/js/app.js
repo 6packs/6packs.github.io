@@ -139,16 +139,49 @@ function buildCard(event) {
     } else if (stNow === 'upcoming') {
       if (lockCountdown) lockCountdown.textContent = '';
       const untilStart = startsAt - now;
-      if (whereEl) whereEl.textContent = (event.location && event.location.trim()) ? event.location : 'TBA';
+      if (whereEl) {
+        if (event.trail && event.trail.trim()) {
+          let html = `<span class='trail-label'>Trail:</span> ${event.trail}`;
+          if (event.parking && event.parking.trim()) {
+            html += `<br><span class='parking-label'>Parking:</span> ${event.parking}`;
+            if (event.latlong && event.latlong.trim()) {
+              html += `<br><span class='latlong-label'></span> ${event.latlong}`;
+            }
+          }
+          whereEl.innerHTML = html;
+        } else {
+          whereEl.textContent = 'TBA';
+        }
+      }
       lock.style.display = 'none';
     } else if (stNow === 'live') {
       if (lockCountdown) lockCountdown.textContent = '';
       const untilEnd = endsAt - now;
-      if (whereEl) whereEl.textContent = (event.location && event.location.trim()) ? event.location : 'TBA';
+      if (whereEl) {
+        if (event.trail && event.trail.trim()) {
+          let html = `<span class='trail-label'>Trail:</span> ${event.trail}`;
+          if (event.parking && event.parking.trim()) {
+            html += `<br><span class='parking-label'>Parking:</span> ${event.parking}`;
+          }
+          whereEl.innerHTML = html;
+        } else {
+          whereEl.textContent = 'TBA';
+        }
+      }
       lock.style.display = 'none';
     } else {
       if (lockCountdown) lockCountdown.textContent = '';
-      if (whereEl) whereEl.textContent = (event.location && event.location.trim()) ? event.location : 'TBA';
+      if (whereEl) {
+        if (event.trail && event.trail.trim()) {
+          let html = `<span class='trail-label'>Trail:</span> ${event.trail}`;
+          if (event.parking && event.parking.trim()) {
+            html += `<br><span class='parking-label'>Parking:</span> ${event.parking}`;
+          }
+          whereEl.innerHTML = html;
+        } else {
+          whereEl.textContent = 'TBA';
+        }
+      }
       lock.style.display = 'none';
     }
 

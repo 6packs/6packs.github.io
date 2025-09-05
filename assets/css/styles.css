@@ -44,7 +44,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: minmax(220px, 1fr); /* Cards fill space, but never smaller than 220px */
-  gap: 2.5rem;
+  gap: 8rem; /* increase from 2.5rem to 3.5rem or as needed */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 2.5rem 0 3rem;
@@ -62,8 +62,8 @@ body {
   border-radius: 24px;
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   scroll-snap-align: center;
-  min-width: 220px;
-  max-width: 400px;
+  min-width: 320px; /* was 220px */
+  max-width: 600px; /* was 400px */
   aspect-ratio: 1 / 1; /* Square cards */
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -85,8 +85,21 @@ body {
 
 .title { margin: .25rem 0 0; font-size: 1.1rem; font-weight: 800; letter-spacing: .01em; }
 
-.meta { color: var(--muted); font-size: .95rem; margin-top: .5rem; }
-.meta strong { color: var(--ink); }
+.meta {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  color: var(--muted);
+  font-size: .95rem;
+  margin-top: .5rem;
+}
+.meta strong {
+  display: inline-block;
+  width: auto;
+  white-space: nowrap;
+  max-width: none;
+  overflow: visible;
+}
 
 .countdown { margin-top: .75rem; font-variant-numeric: tabular-nums; color: var(--ink); }
 

@@ -4,70 +4,88 @@
       "id": 1,
       "title": "September 5",
       "startsAt": "2025-09-05T15:00:00-06:00",
-      "location": "Lynn Trail (Park at the Reservoir)",
-      "gallery": []
+      "trail": "Lynn Trail",
+      "parking": "Briery Branch Reservoir",
+      "latlong": "38.45067, -79.15861",
+     "gallery": []
     },
     {
       "id": 2,
       "title": "September 12",
       "startsAt": "2025-09-12T15:00:00-06:00",
-      "location": "Braley's Pond",
+      "trail": "Braley's Pond",
+      "parking": "Park at the Reservoir",
+      "latlong": "38.4202,-79.2083",
       "gallery": []
     },
     {
       "id": 3,
       "title": "September 19",
       "startsAt": "2025-09-19T15:00:00-06:00",
-      "location": "Boone's (Park at Cub Run)",
+      "trail": "Boone's",
+      "parking": "Park at Cub Run",
+      "latlong": "38.5333,-78.8121",
       "gallery": []
     },
     {
       "id": 4,
       "title": "September 26",
       "startsAt": "2025-09-26T15:00:00-06:00",
-      "location": "Chimney Hollow",
+      "trail": "Chimney Hollow",
+      "parking": "Park at the Reservoir",
+      "latlong": "38.4821,-78.8812",
       "gallery": []
     },
     {
       "id": 5,
       "title": "October 3",
       "startsAt": "2025-10-03T15:00:00-06:00",
-      "location": "Lookout",
+      "trail": "Lookout",
+      "parking": "Park at the Reservoir",
+      "latlong": "38.4821,-78.8812",
       "gallery": []
     },
     {
       "id": 6,
       "title": "October 10",
       "startsAt": "2025-10-10T15:00:00-06:00",
-      "location": "Maple Springs (Park at Rawley)",
+      "trail": "Maple Springs",
+      "parking": "Park at Rawley",
+      "latlong": "38.5577,-78.9301",
       "gallery": []
     },
     {
       "id": 7,
       "title": "October 17",
       "startsAt": "2025-10-17T15:00:00-06:00",
-      "location": "Heartbreak",
+      "trail": "Heartbreak",
+      "parking": "Park at the Reservoir",
+     "latlong": "38.4821,-78.8812",
       "gallery": []
     },
     {
       "id": 8,
       "title": "October 24",
       "startsAt": "2025-10-24T15:00:00-06:00",
-      "location": "Grubb's Knob",
+      "trail": "Grubb's Knob",
+      "parking": "Park at the Reservoir",
+      "latlong": "38.4821,-78.8812",
       "gallery": []
     },
     {
       "id": 9,
       "title": "October 31",
       "startsAt": "2025-10-31T15:00:00-06:00",
-      "location": "Mud Pond",
+      "trail": "Mud Pond",
+      "parking": "Park at the Reservoir",
+      "latlong": "38.4821,-78.8812",
       "gallery": []
     },
     {
       "id": 10,
       "title": "November 8",
       "startsAt": "2025-11-08T12:00:00-05:00",
-      "location": "High Knob",
+      "trail": "High Knob",
       "note": "Starts Saturday noon, finishes Sunday noon.",
       "gallery": []
     }
