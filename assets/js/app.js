@@ -90,7 +90,7 @@ function buildCard(event) {
   const info = document.createElement('div');
   info.className = 'info';
   info.innerHTML = `
-    <p class="meta"><span class="label">When</span><br><strong>${fmtDate(new Date(startsAt))}</strong></p>
+    <p class="meta"><span class="label">Rollout</span><br><strong>${fmtDate(new Date(startsAt))}</strong></p>
     <p class="meta"><span class="label">Where</span><br><strong><span data-role="where"></span></strong></p>
     ${event.note ? `<p class="meta"><span class="label">Note</span><br>${event.note}</p>` : ''}
   `;
