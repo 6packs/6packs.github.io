@@ -89,9 +89,14 @@ function buildCard(event) {
 
   const info = document.createElement('div');
   info.className = 'info';
+  let podiumHtml = '';
+  if (event.winner !== undefined && event.winner.trim() && now > (startsAt + MS.day)) {
+    podiumHtml = `<p class="meta"><span class="label">Podium</span><br><strong>${event.winner}</strong></p>`;
+  }
   info.innerHTML = `
     <p class="meta"><span class="label">Rollout</span><br><strong>${fmtDate(new Date(startsAt))}</strong></p>
     <p class="meta"><span class="label">Where</span><br><strong><span data-role="where"></span></strong></p>
+    ${podiumHtml}
     ${event.note ? `<p class="meta"><span class="label">Note</span><br>${event.note}</p>` : ''}
   `;
   body.appendChild(info);
