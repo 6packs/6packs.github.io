@@ -47,16 +47,16 @@
       "trail": "Wolf",
       "parking": "Wolf Lot",
       "latlong": "38.4288, -79.13024",
-      "winner": "",
+      "winner": "Harlan, Josh, Stan",
       "gallery": []
     },
     {
       "id": 6,
       "title": "October 10",
       "startsAt": "2025-10-10T15:00:00-05:15",
-      "trail": "Maple Springs",
-      "parking": "Park at Rawley",
-      "latlong": "",
+      "trail": "Groom's Ridge",
+      "parking": "Bottom of Groom's",
+      "latlong": "38.377,-79.161",
       "winner": "",
       "gallery": []
     },
