@@ -57,16 +57,16 @@
       "trail": "Groom's Ridge",
       "parking": "Bottom of Groom's",
       "latlong": "38.377,-79.161",
-      "winner": "",
+      "winner": "Timmy, Adam, Josh",
       "gallery": []
     },
     {
       "id": 7,
       "title": "October 17",
       "startsAt": "2025-10-17T15:00:00-05:15",
-      "trail": "Heartbreak",
-      "parking": "",
-      "latlong": "",
+      "trail": "Grindstone",
+      "parking": "Wild Oak Lot",
+      "latlong": "38.3661, -79.1644",
       "winner": "",
       "gallery": []
     },
@@ -74,9 +74,9 @@
       "id": 8,
       "title": "October 24",
       "startsAt": "2025-10-24T15:00:00-05:15",
-      "trail": "If you're reading this, you lost the game.",
-      "parking": "",
-      "latlong": "",
+      "trail": "Trimble Reverse",
+      "parking": "Trimble Lot",
+      "latlong": "38.36264, -79.20547",
       "winner": "",
       "gallery": []
     },
@@ -94,8 +94,10 @@
       "id": 10,
       "title": "November 8",
       "startsAt": "2025-11-08T12:00:00-05:00",
-      "trail": "High Knob",
-      "note": "Starts Saturday noon, finishes Sunday noon.",
+      "trail": "Death Star / Red Diamond",
+      "parking": "Hone Quarry Campground",
+      "latlong": "38.4622, -79.13498",
+      "note": "Starts Saturday 10am, campout after.",
       "gallery": []
     }
   ]
