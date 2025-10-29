@@ -57,7 +57,7 @@
       "trail": "Groom's Ridge",
       "parking": "Bottom of Groom's",
       "latlong": "38.377,-79.161",
-      "winner": "Timmy, Adam, Josh",
+      "winner": "Timmy, Adam W, Josh",
       "gallery": []
     },
     {
@@ -67,7 +67,7 @@
       "trail": "Grindstone",
       "parking": "Wild Oak Lot",
       "latlong": "38.3661, -79.1644",
-      "winner": "",
+      "winner": "Timmy, Adam W, JG",
       "gallery": []
     },
     {
@@ -77,7 +77,7 @@
       "trail": "Trimble Reverse",
       "parking": "Trimble Lot",
       "latlong": "38.36264, -79.20547",
-      "winner": "",
+      "winner": "1st (Tie): Charlie and Andrew Y, 3rd: Noah",
       "gallery": []
     },
     {
@@ -85,8 +85,8 @@
       "title": "October 31",
       "startsAt": "2025-10-31T15:00:00-05:15",
       "trail": "Mud Pond",
-      "parking": "",
-      "latlong": "",
+      "parking": "Last Spot Before Mud Pond",
+      "latlong": "38.48, -79.09",
       "winner": "",
       "gallery": []
     },
@@ -94,9 +94,9 @@
       "id": 10,
       "title": "November 8",
       "startsAt": "2025-11-08T10:00:00-05:00",
-      "trail": "Death Star / Red Diamond",
-      "parking": "Hone Quarry Campground",
-      "latlong": "38.4622, -79.13498",
+      "trail": "Red Diamond",
+      "parking": "Bottom of Red Diamond",
+      "latlong": "",
       "note": "Starts Saturday 10am, campout after.",
       "gallery": []
     }
