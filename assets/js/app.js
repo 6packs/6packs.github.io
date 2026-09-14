@@ -9,7 +9,7 @@ const MS = {
   day: 24 * 60 * 60 * 1000
 };
 
-const UNLOCK_LEAD_MS = 48 * MS.hour; // unlock 48 hours before event
+const UNLOCK_LEAD_MS = 730 * MS.hour; // unlock 48 hours before event
 
 const stateOf = (now, startsAtMs, endsAtMs) => {
   if (now < startsAtMs - UNLOCK_LEAD_MS) return 'locked';
