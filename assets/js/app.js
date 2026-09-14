@@ -1,4 +1,4 @@
-// Friday Night MTB: minimalist, boxed, locked-until-48h carousel
+// Friday Night MTB: minimalist, boxed, locked-until-1 month carousel
 const CAROUSEL = document.getElementById('carousel');
 const HOT_LEFT = document.getElementById('hot-left');
 const HOT_RIGHT = document.getElementById('hot-right');
